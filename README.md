@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Shadcn template
+# React + TypeScript + Vite + Shadcn + Connectkit+ wagmi/viem v2
 
 A React + TypeScript + Vite + Shadcn template for building apps with Radix UI and Tailwind CSS.
 
@@ -15,12 +15,3 @@ yarn
 ```bash
 yarn dev
 ```
-
-## Features
-
-- React + Typescript + Vite
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode
-- Tailwind CSS class sorting, merging and linting.
