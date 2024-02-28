@@ -4,6 +4,7 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
 import { Link } from "react-router-dom"
+import { ConnectKitButton } from "connectkit"
 
 export function SiteHeader() {
   return (
@@ -12,33 +13,7 @@ export function SiteHeader() {
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <Link to={siteConfig.links.github} target="_blank" rel="noreferrer">
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
-              to={siteConfig.links.youtube}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "icon",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
-              </div>
-            </Link>
-            <ModeToggle />
+            <ConnectKitButton />
           </nav>
         </div>
       </div>
