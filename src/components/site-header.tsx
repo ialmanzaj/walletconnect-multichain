@@ -4,16 +4,19 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { buttonVariants } from "@/components/ui/button"
 import { siteConfig } from "@/config/site"
 import { Link } from "react-router-dom"
-import { ConnectKitButton } from "connectkit"
+import {
+ useWeb3Modal
+} from "@web3modal/ethers/react"
 
 export function SiteHeader() {
+  const {  } = useWeb3Modal()
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <MainNav items={siteConfig.mainNav} />
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <ConnectKitButton />
+            <w3m-button balance="hide" />
           </nav>
         </div>
       </div>
